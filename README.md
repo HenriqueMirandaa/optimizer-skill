@@ -4,10 +4,10 @@
 
 # Optimizer Skill
 
-### O caminho mais simples e seguro para melhorar seu código com IA.
+### The simplest and safest path to better software with AI.
 
-Uma skill profissional para **Claude Code** que encontra ganhos reais de performance,
-clareza e organização — sem reescritas especulativas.
+A professional **Claude Code** skill that finds real improvements in performance,
+clarity, and organization — without speculative rewrites.
 
 [![Claude Code](https://img.shields.io/badge/Claude%20Code-plugin-D97757?logo=anthropic&logoColor=white)](https://docs.anthropic.com/en/docs/claude-code)
 [![Version](https://img.shields.io/badge/version-1.0.0-6E56CF)](https://github.com/HenriqueMirandaa/optimizer-skill/releases)
@@ -15,92 +15,92 @@ clareza e organização — sem reescritas especulativas.
 
 </div>
 
-## Por que usar?
+## Why use it?
 
-Assistentes de IA podem “otimizar” código adicionando abstrações, dependências e
-complexidade sem provar que houve ganho. A **Optimizer Skill** impõe um processo
-mais confiável:
+AI assistants can “optimize” code by adding abstractions, dependencies, and
+complexity without proving that anything improved. **Optimizer Skill** enforces
+a more reliable process:
 
-> **Entender → medir → mudar o mínimo → verificar → explicar as evidências**
+> **Understand → measure → make the smallest change → verify → explain the evidence**
 
-Ela é útil para refatoração, revisão de código, gargalos de performance,
-organização de módulos e limpeza técnica.
+It is useful for refactoring, code reviews, performance bottlenecks, module
+organization, and technical cleanup.
 
-## Instalação
+## Installation
 
-### Opção recomendada: marketplace do seu repositório
+### Recommended: install from this repository's marketplace
 
-No terminal do Claude Code:
+In Claude Code:
 
 ```text
 /plugin marketplace add HenriqueMirandaa/optimizer-skill
 /plugin install optimizer-skill@optimizer-skill-marketplace
 ```
 
-Ou pelo terminal do sistema:
+Or from your system terminal:
 
 ```bash
 claude plugin marketplace add HenriqueMirandaa/optimizer-skill
 claude plugin install optimizer-skill@optimizer-skill-marketplace
 ```
 
-Escolha o escopo desejado durante a instalação:
+Choose the scope that fits your workflow:
 
-| Escopo | Disponibilidade |
+| Scope | Availability |
 | --- | --- |
-| `user` | Todos os seus projetos nesta máquina |
-| `project` | Colaboradores deste repositório |
-| `local` | Apenas você neste repositório |
+| `user` | All your projects on this machine |
+| `project` | Everyone working in this repository |
+| `local` | Only you, in this repository |
 
-### Testar sem instalar
+### Test without installing
 
-Clone o projeto e execute:
+Clone the repository and run:
 
 ```bash
 claude plugin validate .
 claude --plugin-dir .
 ```
 
-Para testar um release ZIP em uma única sessão:
+To test a release ZIP for a single session:
 
 ```bash
 claude --plugin-url https://github.com/HenriqueMirandaa/optimizer-skill/releases/download/v1.0.0/optimizer-skill.zip
 ```
 
-## Como usar
+## How to use
 
-Depois da instalação, invoque:
+After installation, invoke the skill with:
 
 ```text
 /optimizer-skill:optimizer-skill
 ```
 
-Ou peça naturalmente:
+Or ask Claude naturally:
 
 ```text
-Use a optimizer-skill neste módulo. Encontre o maior ganho real,
-meça antes e faça a menor alteração segura.
+Use optimizer-skill on this module. Find the biggest real improvement,
+measure it first, and make the smallest safe change.
 ```
 
-O Claude deve retornar:
+Claude should return:
 
-1. **Finding** — o problema encontrado;
-2. **Change** — a menor mudança eficaz;
-3. **Evidence** — testes e medições;
-4. **Tradeoffs** — impactos e limitações;
-5. **Skipped** — o que foi conscientemente deixado de fora.
+1. **Finding** — the problem discovered;
+2. **Change** — the smallest effective change;
+3. **Evidence** — tests and measurements;
+4. **Tradeoffs** — impacts and limitations;
+5. **Skipped** — work intentionally left out.
 
-## Princípios
+## Principles
 
-- Medir antes de otimizar.
-- Remover trabalho desnecessário antes de adicionar mecanismos.
-- Preferir bibliotecas padrão, helpers existentes e recursos nativos.
-- Corrigir a causa compartilhada, não cada sintoma.
-- Preservar segurança, validação, acessibilidade e tratamento de erros.
-- Não adicionar cache, dependência ou abstração sem justificativa.
-- Não alegar ganho de performance sem evidência.
+- Measure before optimizing.
+- Remove unnecessary work before adding mechanisms.
+- Prefer standard-library solutions, existing helpers, and native features.
+- Fix shared root causes instead of patching individual symptoms.
+- Preserve security, validation, accessibility, and error handling.
+- Do not add a cache, dependency, or abstraction without justification.
+- Never claim a performance improvement without evidence.
 
-## Estrutura
+## Project structure
 
 ```text
 .
@@ -117,24 +117,24 @@ O Claude deve retornar:
 └── README.md
 ```
 
-## Desenvolvimento
+## Development
 
-Requisitos:
+Requirements:
 
-- Claude Code instalado e autenticado;
+- Claude Code installed and authenticated;
 - Git;
-- acesso ao GitHub, caso queira publicar alterações.
+- GitHub access if you want to publish changes.
 
-Valide o plugin antes de abrir um release:
+Validate the plugin before creating a release:
 
 ```bash
 claude plugin validate .
 ```
 
-O projeto não executa código próprio, não instala dependências e não requer
-servidor MCP. A skill é composta por instruções Markdown carregadas quando
-invocada.
+This project does not execute custom code, install dependencies, or require an
+MCP server. The skill consists of Markdown instructions that are loaded when
+invoked.
 
-## Licença
+## License
 
-Distribuído sob a licença [MIT](LICENSE).
+Distributed under the [MIT License](LICENSE).
