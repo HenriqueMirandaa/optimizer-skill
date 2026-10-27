@@ -1,0 +1,18 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "optimizer-skill-marketplace",
+  "version": "1.0.0",
+  "description": "Professional optimization and code-quality skills for Claude Code.",
+  "owner": {
+    "name": "Henrique Miranda"
+  },
+  "plugins": [
+    {
+      "name": "optimizer-skill",
+      "source": "./",
+      "description": "Finds the smallest safe change that improves software performance, simplicity, cleanliness, and organization.",
+      "version": "1.0.0",
+      "category": "development"
+    }
+  ]
+}
