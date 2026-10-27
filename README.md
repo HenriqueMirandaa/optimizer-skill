@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="assets/optimizer-logo.svg" alt="Optimizer Skill logo" width="144">
+<img src="optmizer-skill.png" alt="Optimizer Skill logo" width="144">
 
 # Optimizer Skill
 
